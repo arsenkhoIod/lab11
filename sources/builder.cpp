@@ -141,7 +141,6 @@ builder::builder()
     :   build_func(nullptr)
     , install_func(nullptr)
     , pack_func(nullptr)
-    , wait_for_timeout(nullptr)
     , timeout_flag(false)
     , processes_completed(false)
     , process_failed(false)
@@ -154,7 +153,6 @@ builder::builder(const size_t& ms_timeout)
     :   build_func(nullptr)
     , install_func(nullptr)
     , pack_func(nullptr)
-    , wait_for_timeout(nullptr)
     , timeout_flag(false)
     , processes_completed(false)
     , process_failed(false)
@@ -175,5 +173,4 @@ builder::~builder() {
   delete build_func;
   delete install_func;
   delete pack_func;
-  delete wait_for_timeout;
 }

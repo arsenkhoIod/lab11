@@ -24,7 +24,6 @@ class builder {
   std::function<void()>* build_func;
   std::function<void()>* install_func;
   std::function<void()>* pack_func;
-  std::function<void()>* wait_for_timeout;
   std::atomic_bool timeout_flag;
   std::atomic_bool processes_completed;
   std::atomic_bool process_failed;
